@@ -36,23 +36,28 @@
       flex-wrap: wrap;
     }
 
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+   .header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .logo {
-      height: 180px;
-      width: auto;
-    }
+.logo {
+  height: 140px;
+  width: auto;
+  max-width: 100%;
+}
 
-    .brand-text h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      text-align: center;
-    }
-
+.brand-text h1 {
+  font-size: 2.6rem;
+  margin: 0;
+  text-align: left;
+  color: white;
+}
     nav {
       background: var(--secondary-bg);
       text-align: center;
@@ -166,13 +171,13 @@
 </head>
 <body>
   <header role="banner">
-    <div class="header-left">
-      <img class="logo" src="images/FullLogo.png" alt="Rob AI Solutions logo with stylized R and slogan" />
-      <div class="brand-text">
-        <h1>Rob AI Solutions</h1>
-      </div>
+  <div class="header-left">
+    <img class="logo" src="images/FullLogo.png" alt="Rob AI Solutions logo with stylized R and slogan" />
+    <div class="brand-text">
+      <h1>Rob AI Solutions</h1>
     </div>
-  </header>
+  </div>
+</header>
 
   <nav role="navigation">
     <a href="index.html">Home</a>
