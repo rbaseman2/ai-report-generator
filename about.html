@@ -27,37 +27,30 @@
     }
 
     header {
-  background: var(--primary-bg);
-  color: white;
-  padding: 20px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start; /* <-- force logo + text to left */
-  gap: 20px;
-}
+      background: var(--primary-bg);
+      color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-.logo {
-  height: 64px;
-  width: auto;
-  margin: 0;
-}
+    .logo {
+      height: 80px;
+      width: auto;
+      margin-right: 20px;
+    }
 
-.brand-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
 
-.brand-text h1 {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-.slogan {
-  color: var(--accent);
-  font-size: 1rem;
-  margin-top: 4px;
-}
+    .brand-text h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
 
     nav {
       background: var(--secondary-bg);
@@ -151,13 +144,11 @@
     }
 
     .project img {
-  max-width: 85%;
-  margin: 20px auto 10px;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* Modern soft shadow */
-}
-
+      max-width: 80%;
+      margin: 20px auto 10px;
+      display: block;
+      border: 1px solid #334155;
+    }
 
     @media screen and (max-width: 768px) {
       header {
@@ -180,7 +171,6 @@
     <img class="logo" src="images/fulllogo.png" alt="Rob AI Solutions logo with stylized R and slogan" />
     <div class="brand-text">
       <h1>Rob AI Solutions</h1>
-      <p class="slogan">Practical AI tools that streamline business operations and automate reporting</p>
     </div>
   </header>
 
