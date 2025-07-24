@@ -27,38 +27,37 @@
     }
 
     header {
-      background: var(--primary-bg);
-      color: white;
-      padding: 20px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      text-align: left;
-    }
+  background: var(--primary-bg);
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* <-- force logo + text to left */
+  gap: 20px;
+}
 
-    .logo {
-      height: 80px;
-      width: auto;
-      margin-right: 20px;
-    }
+.logo {
+  height: 64px;
+  width: auto;
+  margin: 0;
+}
 
-    .brand-text {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
-    .brand-text h1 {
-      font-size: 2rem;
-      margin: 0;
-    }
+.brand-text h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
 
-    .slogan {
-      color: var(--accent);
-      font-size: 1.1rem;
-      margin-top: 4px;
-    }
+.slogan {
+  color: var(--accent);
+  font-size: 1rem;
+  margin-top: 4px;
+}
 
     nav {
       background: var(--secondary-bg);
@@ -152,11 +151,13 @@
     }
 
     .project img {
-      max-width: 90%;
-      margin: 20px auto 10px;
-      display: block;
-      border: 1px solid #334155;
-    }
+  max-width: 85%;
+  margin: 20px auto 10px;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4); /* Modern soft shadow */
+}
+
 
     @media screen and (max-width: 768px) {
       header {
