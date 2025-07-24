@@ -12,6 +12,18 @@
   <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.logo-container img.logo {
+  height: 40px;
+  margin-right: 15px;
+}
+.logo-container h1 {
+  font-size: 1.8rem;
+  margin: 0;
+}
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
@@ -95,9 +107,15 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Rob AI Solutions</h1>
-  </header>
+ <header>
+  <div class="logo-container">
+    <a href="index.html"><img class="logo" src="images/logo.png" alt="Rob AI Solutions Logo"></a>
+    <div>
+      <h1>Rob AI Solutions</h1>
+      <p>Practical AI tools that streamline business operations and automate reporting</p>
+    </div>
+  </div>
+</header>
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
