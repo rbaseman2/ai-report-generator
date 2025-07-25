@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Rob AI Solutions | AI Tools & Automations</title>
-  <meta name="description" content="Rob AI Solutions provides practical AI tools to automate reports and streamline operations." />
+  <title>Rob AI Solutions | Contact</title>
+  <meta name="description" content="Contact Rob AI Solutions for AI tools and automation services." />
   <link rel="icon" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
@@ -33,7 +33,7 @@
     }
 
     .logo-container img {
-      height: auto;
+      height: 180px;
       width: auto;
     }
 
@@ -59,11 +59,9 @@
       text-decoration: none;
       color: var(--accent);
       font-weight: bold;
-      font-size: 1rem;
     }
 
-    nav a:hover,
-    nav a:focus {
+    nav a:hover {
       color: var(--accent-hover);
       text-decoration: underline;
     }
@@ -73,21 +71,63 @@
       margin: 40px auto;
       padding: 30px;
       background: #1e293b;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
       border-radius: 12px;
     }
 
     h2 {
       color: var(--accent);
-      font-size: 1.8rem;
+      text-align: center;
     }
 
-    h3 {
-      color: #f8fafc;
+    form {
+      display: grid;
+      gap: 15px;
+      margin-top: 20px;
     }
 
-    p {
-      color: #cbd5e1;
+    input, textarea {
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    button {
+      background: var(--accent);
+      color: #000;
+      padding: 12px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-hover);
+    }
+
+    .map {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    iframe {
+      border: 0;
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      margin: 0 10px;
+      color: var(--accent);
+      font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
@@ -95,7 +135,6 @@
       padding: 30px;
       background: var(--primary-bg);
       color: var(--text-muted);
-      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -104,7 +143,7 @@
     <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
   </div>
 
-  <nav role="navigation">
+  <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="thanks.html">Thank You</a>
@@ -112,43 +151,26 @@
   </nav>
 
   <main class="container">
-    <section id="about">
-      <h2>About Rob Bennett</h2>
-      <p>Hi, I’m Rob Bennett — founder of Rob AI Solutions. With over 20 years in IT and a background in software development, I’ve recently transitioned into the exciting world of artificial intelligence. I specialize in building smart tools that automate reporting, simplify workflows, and make business data actionable.</p>
-      <p>My mission is to help professionals and small businesses harness AI without the complexity. Whether you’re looking to automate client deliverables or create internal tools powered by large language models — I can help.</p>
-      <p>This portfolio is my ongoing journey into practical AI — blending business acumen, development skills, and a passion for efficiency.</p>
-    </section>
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
-    <section id="projects">
-      <h2>Featured Projects</h2>
-      <div class="project">
-        <h3>AI-Powered Report Generator</h3>
-        <p>This web app takes business data from CSV files and generates professional, client-ready reports using OpenAI. Built with Python, Streamlit, and Pandas.</p>
-        <img src="screenshots/about-page.png" alt="Screenshot of the AI-Powered Report Generator user interface" />
-        <a class="button" href="https://ai-report-generator.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
-        <a class="button" href="https://github.com/rbaseman2/ai-report-generator" target="_blank" rel="noopener">GitHub Repo</a>
-      </div>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096175!2d144.9556513159044!3d-37.81732797975126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779c4f3a8c6e2b!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1611816320345" allowfullscreen="" loading="lazy"></iframe>
+    </div>
 
-      <div class="project">
-        <h3>Resume Summarizer (Coming Soon)</h3>
-        <p>A tool that extracts key qualifications from resumes and matches them to job descriptions using NLP and OpenAI.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Interested in working together or need a custom AI solution?</p>
-      <p>Email: <a href="mailto:rob@robaisolutions.com">rob@robaisolutions.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/robaisolutions" target="_blank" rel="noopener">@robaisolutions</a></p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/robaisolutions" target="_blank">🔗</a>
-        <a href="mailto:rob@robaisolutions.com">📧</a>
-        <a href="https://github.com/rbaseman2" target="_blank">🐱</a>
-      </div>
-    </section>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/robaisolutions" target="_blank">LinkedIn</a>
+      <a href="mailto:rob@robaisolutions.com">Email</a>
+      <a href="https://github.com/rbaseman2" target="_blank">GitHub</a>
+    </div>
   </main>
 
-  <footer role="contentinfo">
+  <footer>
     <p>&copy; 2025 Rob AI Solutions. Built with ❤️ and Python.</p>
   </footer>
 </body>
