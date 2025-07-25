@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rob AI Solutions | Home</title>
-  <meta name="description" content="Smart AI tools to automate reports and streamline operations." />
+  <meta name="description" content="Welcome to Rob AI Solutions — practical AI tools and automations." />
   <link rel="icon" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
@@ -23,6 +23,7 @@
       padding: 0;
       background: var(--primary-bg);
       color: var(--text-light);
+      line-height: 1.6;
     }
 
     .logo-container {
@@ -58,9 +59,11 @@
       text-decoration: none;
       color: var(--accent);
       font-weight: bold;
+      font-size: 1rem;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a:focus {
       color: var(--accent-hover);
       text-decoration: underline;
     }
@@ -70,16 +73,45 @@
       margin: 40px auto;
       padding: 30px;
       background: #1e293b;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
       border-radius: 12px;
-      text-align: center;
     }
 
     h2 {
       color: var(--accent);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      text-align: center;
     }
 
     p {
       color: #cbd5e1;
+      font-size: 1.1rem;
+    }
+
+    .project {
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 30px;
+      background: var(--secondary-bg);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--accent);
+      color: var(--secondary-bg);
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-right: 10px;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: var(--accent-hover);
     }
 
     footer {
@@ -87,6 +119,7 @@
       padding: 30px;
       background: var(--primary-bg);
       color: var(--text-muted);
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -95,7 +128,7 @@
     <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
   </div>
 
-  <nav>
+  <nav role="navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="thanks.html">Thank You</a>
@@ -103,9 +136,25 @@
   </nav>
 
   <main class="container">
-    <h2>Welcome to Rob AI Solutions</h2>
-    <p>Discover smart, practical AI tools designed to save you time, streamline your workflows, and make data actionable. Whether you’re a small business, freelancer, or professional — Rob AI Solutions helps you work smarter with automation.</p>
-    <p>Explore our featured apps, get inspired, and see how AI can simplify your business operations.</p>
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project">
+        <h3>AI-Powered Report Generator</h3>
+        <p>This web app takes business data from CSV files and generates professional, client-ready reports using OpenAI. Built with Python, Streamlit, and Pandas.</p>
+        <a class="button" href="https://ai-report-generator.streamlit.app/" target="_blank">Live Demo</a>
+        <a class="button" href="https://github.com/rbaseman2/ai-report-generator" target="_blank">GitHub Repo</a>
+      </div>
+      <div class="project">
+        <h3>Resume Summarizer (Coming Soon)</h3>
+        <p>A tool that extracts key qualifications from resumes and matches them to job descriptions using NLP and OpenAI.</p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in working together or need a custom AI solution?</p>
+      <p>Email: rob@robaisolutions.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/robaisolutions" target="_blank">@robaisolutions</a></p>
+    </section>
   </main>
 
   <footer>
@@ -113,5 +162,3 @@
   </footer>
 </body>
 </html>
-
-
