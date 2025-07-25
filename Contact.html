@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rob AI Solutions | AI Tools & Automations</title>
+  <meta name="description" content="Rob AI Solutions provides practical AI tools to automate reports and streamline operations." />
+  <link rel="icon" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-bg: #0a0f1a;
+      --secondary-bg: #0f172a;
+      --text-light: #e5e7eb;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--primary-bg);
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .logo-container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeInHeader 2s ease-in-out;
+    }
+
+    .logo-container img {
+      height: 180px;
+      width: auto;
+    }
+
+    @keyframes fadeInHeader {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    nav {
+      background: var(--secondary-bg);
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      margin: 0 20px;
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #1e293b;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      color: #f8fafc;
+    }
+
+    p {
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--primary-bg);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
+  </div>
+
+  <nav role="navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="thanks.html">Thank You</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main class="container">
+    <section id="about">
+      <h2>About Rob Bennett</h2>
+      <p>Hi, I’m Rob Bennett — founder of Rob AI Solutions. With over 20 years in IT and a background in software development, I’ve recently transitioned into the exciting world of artificial intelligence. I specialize in building smart tools that automate reporting, simplify workflows, and make business data actionable.</p>
+      <p>My mission is to help professionals and small businesses harness AI without the complexity. Whether you’re looking to automate client deliverables or create internal tools powered by large language models — I can help.</p>
+      <p>This portfolio is my ongoing journey into practical AI — blending business acumen, development skills, and a passion for efficiency.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Featured Projects</h2>
+      <div class="project">
+        <h3>AI-Powered Report Generator</h3>
+        <p>This web app takes business data from CSV files and generates professional, client-ready reports using OpenAI. Built with Python, Streamlit, and Pandas.</p>
+        <img src="screenshots/about-page.png" alt="Screenshot of the AI-Powered Report Generator user interface" />
+        <a class="button" href="https://ai-report-generator.streamlit.app/" target="_blank" rel="noopener">Live Demo</a>
+        <a class="button" href="https://github.com/rbaseman2/ai-report-generator" target="_blank" rel="noopener">GitHub Repo</a>
+      </div>
+
+      <div class="project">
+        <h3>Resume Summarizer (Coming Soon)</h3>
+        <p>A tool that extracts key qualifications from resumes and matches them to job descriptions using NLP and OpenAI.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Interested in working together or need a custom AI solution?</p>
+      <p>Email: <a href="mailto:rob@robaisolutions.com">rob@robaisolutions.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/robaisolutions" target="_blank" rel="noopener">@robaisolutions</a></p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/robaisolutions" target="_blank">🔗</a>
+        <a href="mailto:rob@robaisolutions.com">📧</a>
+        <a href="https://github.com/rbaseman2" target="_blank">🐱</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Rob AI Solutions. Built with ❤️ and Python.</p>
+  </footer>
+</body>
+</html>
