@@ -1,95 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE6YRSP3ZM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FE6YRSP3ZM');
-  </script>
-
-  <title>Thanks – Rob AI Solutions</title>
-  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/4712/4712109.png">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <meta http-equiv="refresh" content="10; url=https://robaisolutions.com">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rob AI Solutions | Thank You</title>
+  <meta name="description" content="Thank you for visiting Rob AI Solutions – practical tools to streamline and automate your business." />
+  <link rel="icon" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --primary-bg: #0a0f1a;
+      --secondary-bg: #0f172a;
+      --text-light: #e5e7eb;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+    }
+
     body {
       font-family: 'Roboto', sans-serif;
-      background: #f9f9fb;
-      color: #0a192f;
-      text-align: center;
-      padding: 60px 20px;
-    }
-    header {
-      background: #0a192f;
-      color: white;
-      padding: 20px;
-    }
-    header h1 {
       margin: 0;
-      font-size: 2rem;
+      padding: 0;
+      background: var(--primary-bg);
+      color: var(--text-light);
+      line-height: 1.6;
     }
-    main h2 {
-      color: #10b981;
-      margin-top: 40px;
-      font-size: 2rem;
-    }
-    .checkmark {
-      font-size: 3rem;
-      color: #10b981;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-top: 20px;
-    }
-    .social-icons {
-      margin-top: 30px;
-    }
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-    }
-    .social-icons img {
-      width: 24px;
-      height: 24px;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background: #0072ff;
+
+    header {
+      background: var(--primary-bg);
       color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo {
+      height: 180px;
+      width: auto;
+    }
+
+    .brand-text h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    nav {
+      background: var(--secondary-bg);
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      margin: 0 20px;
       text-decoration: none;
-      border-radius: 5px;
+      color: var(--accent);
+      font-weight: bold;
+      font-size: 1rem;
     }
-    a.button:hover {
-      background: #005bb5;
+
+    nav a:hover,
+    nav a:focus {
+      color: var(--accent-hover);
+      text-decoration: underline;
     }
-    .note {
-      margin-top: 20px;
-      font-size: 0.95rem;
-      color: #555;
+
+    .container {
+      max-width: 720px;
+      margin: 60px auto;
+      padding: 40px;
+      background: #1e293b;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--primary-bg);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+      }
+      .logo {
+        height: 120px;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Rob AI Solutions</h1>
-  </header>
-  <main>
-    <div class="checkmark">✅</div>
-    <h2>Thank you for getting in touch!</h2>
-    <p>Your message was successfully sent. I’ll get back to you as soon as possible.</p>
-    <a class="button" href="index.html">Return to Homepage</a>
-    <div class="social-icons">
-      <a href="https://github.com/rbaseman2" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
-      <a href="https://calendly.com/robaisolutions" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5977/5977575.png" alt="Calendly"></a>
-      <a href="https://linkedin.com/in/robaisolutions" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
-      <a href="mailto:rob@robaisolutions.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"></a>
+  <header role="banner">
+    <div class="header-left">
+      <img class="logo" src="images/FullLogo.png" alt="Rob AI Solutions logo with stylized R and slogan" />
+      <div class="brand-text">
+        <h1>Rob AI Solutions</h1>
+      </div>
     </div>
-    <p class="note">You’ll be redirected automatically in 10 seconds.</p>
+  </header>
+
+  <nav role="navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="thanks.html">Thank You</a>
+  </nav>
+
+  <main class="container">
+    <h2>Thank You!</h2>
+    <p>Your interest in Rob AI Solutions is truly appreciated. If you have any questions or would like to collaborate, feel free to reach out.</p>
+    <p>More tools, demos, and updates are on the way. Stay tuned!</p>
   </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Rob AI Solutions. Built with ❤️ and Python.</p>
+  </footer>
 </body>
 </html>
