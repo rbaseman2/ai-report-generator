@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rob AI Solutions | Home</title>
-  <meta name="description" content="Explore practical AI tools that streamline operations and automate reporting." />
+  <meta name="description" content="Smart AI tools to automate reports and streamline operations." />
   <link rel="icon" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <style>
@@ -23,34 +23,28 @@
       padding: 0;
       background: var(--primary-bg);
       color: var(--text-light);
-      line-height: 1.6;
     }
 
-    header {
-      background: var(--primary-bg);
-      color: white;
-      padding: 20px 30px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
+    .logo-container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeInHeader 2s ease-in-out;
     }
 
-    .header-left {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .logo {
+    .logo-container img {
       height: 180px;
       width: auto;
     }
 
-    .brand-text h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      text-align: center;
+    @keyframes fadeInHeader {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     nav {
@@ -64,11 +58,9 @@
       text-decoration: none;
       color: var(--accent);
       font-weight: bold;
-      font-size: 1rem;
     }
 
-    nav a:hover,
-    nav a:focus {
+    nav a:hover {
       color: var(--accent-hover);
       text-decoration: underline;
     }
@@ -78,13 +70,12 @@
       margin: 40px auto;
       padding: 30px;
       background: #1e293b;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
       border-radius: 12px;
+      text-align: center;
     }
 
     h2 {
       color: var(--accent);
-      font-size: 1.8rem;
     }
 
     p {
@@ -96,48 +87,31 @@
       padding: 30px;
       background: var(--primary-bg);
       color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-
-    @media screen and (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-      }
-      .logo {
-        height: 120px;
-        margin-bottom: 10px;
-      }
     }
   </style>
 </head>
 <body>
-  <header role="banner">
-    <div class="header-left">
-      <img class="logo" src="images/FullLogo.png" alt="Rob AI Solutions logo" />
-      <div class="brand-text">
-        <h1>Rob AI Solutions</h1>
-      </div>
-    </div>
-  </header>
+  <div class="logo-container">
+    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
+  </div>
 
-  <nav role="navigation">
+  <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="thanks.html">Thank You</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main class="container">
     <h2>Welcome to Rob AI Solutions</h2>
-    <p>Discover smart, practical AI tools designed to save you time, streamline your workflows, and make data actionable. Whether you're a small business, freelancer, or professional — Rob AI Solutions helps you work smarter with automation.</p>
-
+    <p>Discover smart, practical AI tools designed to save you time, streamline your workflows, and make data actionable. Whether you’re a small business, freelancer, or professional — Rob AI Solutions helps you work smarter with automation.</p>
     <p>Explore our featured apps, get inspired, and see how AI can simplify your business operations.</p>
   </main>
 
-  <footer role="contentinfo">
+  <footer>
     <p>&copy; 2025 Rob AI Solutions. Built with ❤️ and Python.</p>
   </footer>
 </body>
 </html>
+
 
