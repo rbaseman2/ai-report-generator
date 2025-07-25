@@ -4,9 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rob AI Solutions | Contact</title>
-  <meta name="description" content="Contact Rob AI Solutions for AI tools and automation services." />
+  <meta name="description" content="Contact Rob AI Solutions for AI-powered automation, reporting tools, and business efficiency solutions." />
+  <meta property="og:title" content="Contact | Rob AI Solutions" />
+  <meta property="og:description" content="Reach out for practical AI tools that streamline operations and reporting." />
+  <meta property="og:image" content="https://robaisolutions.com/images/FullLogo.png" />
+  <meta property="og:url" content="https://robaisolutions.com/contact.html" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rob AI Solutions" />
+  <meta name="twitter:description" content="AI-powered tools and automations by Rob Bennett." />
+  <meta name="twitter:image" content="https://robaisolutions.com/images/FullLogo.png" />
   <link rel="icon" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE6YRSP3ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FE6YRSP3ZM');
+  </script>
   <style>
     :root {
       --primary-bg: #0a0f1a;
@@ -38,14 +53,8 @@
     }
 
     @keyframes fadeInHeader {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     nav {
@@ -55,13 +64,15 @@
     }
 
     nav a {
-      margin: 0 20px;
+      margin: 0 15px;
       text-decoration: none;
       color: var(--accent);
       font-weight: bold;
+      font-size: 1rem;
     }
 
-    nav a:hover {
+    nav a:hover,
+    nav a:focus {
       color: var(--accent-hover);
       text-decoration: underline;
     }
@@ -71,63 +82,36 @@
       margin: 40px auto;
       padding: 30px;
       background: #1e293b;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
       border-radius: 12px;
     }
 
     h2 {
       color: var(--accent);
+      font-size: 1.8rem;
+      margin-bottom: 20px;
       text-align: center;
     }
 
-    form {
-      display: grid;
-      gap: 15px;
-      margin-top: 20px;
+    p {
+      color: #cbd5e1;
+      font-size: 1.1rem;
+      text-align: center;
     }
 
-    input, textarea {
-      padding: 12px;
-      border-radius: 6px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    button {
-      background: var(--accent);
-      color: #000;
-      padding: 12px;
-      font-weight: bold;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: var(--accent-hover);
-    }
-
-    .map {
+    .social-icons {
+      text-align: center;
       margin-top: 30px;
-      text-align: center;
     }
 
-    iframe {
-      border: 0;
-      width: 100%;
-      height: 300px;
-      border-radius: 8px;
-    }
-
-    .social-links {
-      text-align: center;
-      margin-top: 20px;
-    }
-
-    .social-links a {
+    .social-icons a {
       margin: 0 10px;
-      color: var(--accent);
-      font-weight: bold;
-      text-decoration: none;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 32px;
+      height: 32px;
     }
 
     footer {
@@ -135,6 +119,7 @@
       padding: 30px;
       background: var(--primary-bg);
       color: var(--text-muted);
+      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -143,7 +128,7 @@
     <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
   </div>
 
-  <nav>
+  <nav role="navigation">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="thanks.html">Thank You</a>
@@ -151,22 +136,16 @@
   </nav>
 
   <main class="container">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <h2>Contact Rob AI Solutions</h2>
+    <p>Email: <a href="mailto:rob@robaisolutions.com">rob@robaisolutions.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/robaisolutions" target="_blank">@robaisolutions</a></p>
+    <p>Schedule a call: <a href="https://calendly.com/robaisolutions" target="_blank">Book via Calendly</a></p>
 
-    <div class="map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096175!2d144.9556513159044!3d-37.81732797975126!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5779c4f3a8c6e2b!2sMelbourne%2C%20Australia!5e0!3m2!1sen!2sus!4v1611816320345" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/robaisolutions" target="_blank">LinkedIn</a>
-      <a href="mailto:rob@robaisolutions.com">Email</a>
-      <a href="https://github.com/rbaseman2" target="_blank">GitHub</a>
+    <div class="social-icons">
+      <a href="https://github.com/rbaseman2" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
+      <a href="https://calendly.com/robaisolutions" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/5977/5977575.png" alt="Calendly"></a>
+      <a href="https://linkedin.com/in/robaisolutions" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+      <a href="mailto:rob@robaisolutions.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email"></a>
     </div>
   </main>
 
