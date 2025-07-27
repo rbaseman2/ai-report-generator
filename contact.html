@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rob AI Solutions | Contact</title>
-  <meta name="description" content="Contact Rob AI Solutions for AI-powered automation, reporting tools, and business efficiency solutions." />
-  <meta property="og:title" content="Contact | Rob AI Solutions" />
-  <meta property="og:description" content="Reach out for practical AI tools that streamline operations and reporting." />
+  <meta name="description" content="Contact Rob AI Solutions — practical AI tools and automation solutions." />
+  <meta property="og:title" content="Rob AI Solutions | Contact" />
+  <meta property="og:description" content="Contact Rob AI Solutions for custom AI solutions, automations, and reporting tools." />
   <meta property="og:image" content="https://robaisolutions.com/images/FullLogo.png" />
   <meta property="og:url" content="https://robaisolutions.com/contact.html" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rob AI Solutions" />
-  <meta name="twitter:description" content="AI-powered tools and automations by Rob Bennett." />
+  <meta name="twitter:description" content="Practical AI tools and automations for business." />
   <meta name="twitter:image" content="https://robaisolutions.com/images/FullLogo.png" />
   <link rel="icon" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
@@ -53,8 +53,14 @@
     }
 
     @keyframes fadeInHeader {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     nav {
@@ -99,9 +105,40 @@
       text-align: center;
     }
 
+    .contact-form {
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: none;
+      background: #334155;
+      color: #fff;
+    }
+
+    .contact-form button {
+      background: var(--accent);
+      color: var(--secondary-bg);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background: var(--accent-hover);
+    }
+
     .social-icons {
       text-align: center;
-      margin-top: 30px;
+      margin-top: 20px;
     }
 
     .social-icons a {
@@ -110,8 +147,8 @@
     }
 
     .social-icons img {
-      width: 32px;
-      height: 32px;
+      width: 28px;
+      height: 28px;
     }
 
     footer {
@@ -137,9 +174,14 @@
 
   <main class="container">
     <h2>Contact Rob AI Solutions</h2>
-    <p>Email: <a href="mailto:rob@robaisolutions.com">rob@robaisolutions.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/robaisolutions" target="_blank">@robaisolutions</a></p>
-    <p>Schedule a call: <a href="https://calendly.com/robaisolutions" target="_blank">Book via Calendly</a></p>
+    <p>We'd love to hear from you!</p>
+
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
 
     <div class="social-icons">
       <a href="https://github.com/rbaseman2" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub"></a>
