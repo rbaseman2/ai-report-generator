@@ -47,6 +47,31 @@
       color: #e5e7eb;
       line-height: 1.6;
     }
+    .logo-container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeInHeader 2s ease-in-out;
+    }
+
+    .logo-container img {
+      height: 180px;
+      width: auto;
+    }
+
+ @keyframes fadeInHeader {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+<body>
+ <div class="logo-container">
+    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
+  </div>
 
     .header-logo {
       text-align: center;
@@ -186,7 +211,7 @@
 </head>
 <body>
 
-  <div class="header-logo">
+  <div class="logo-container">
     <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
   </div>
 
