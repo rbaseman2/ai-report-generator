@@ -10,16 +10,24 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="AI Concierge by Rob AI Solutions" />
-  <meta property="og:description" content="Your virtual CTO for AI business automation and growth strategy." />
-  <meta property="og:image" content="https://robaisolutions.com/images/FullLogo.png" />
-  <meta property="og:url" content="https://robaisolutions.com/ai-concierge.html" />
+  <meta property="og:description" content="Your virtual CTO for AI business automation and growth strategy. Explore our AI Concierge services." />
+  <meta property="og:image" content="images/FullLogo.png" />
+  <meta property="og:url" content="https://rbaseman2.github.io/ai-report-generator/ai-concierge.html" />
   <meta property="og:type" content="website" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Rob AI Concierge | Virtual CTO" />
   <meta name="twitter:description" content="Automate smarter with Rob AI Concierge. Your virtual CTO partner for growth." />
-  <meta name="twitter:image" content="https://robaisolutions.com/images/FullLogo.png" />
+  <meta name="twitter:image" content="images/FullLogo.png" />
+
+  <!-- Sitemap and Robots -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE6YRSP3ZM"></script>
@@ -29,9 +37,6 @@
     gtag('js', new Date());
     gtag('config', 'G-FE6YRSP3ZM');
   </script>
-
-  <link rel="icon" href="images/favicon.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
   <style>
     body {
@@ -43,26 +48,26 @@
       line-height: 1.6;
     }
 
-    header {
+    .header-logo {
+      text-align: center;
+      padding-top: 30px;
       background: #0a0f1a;
-      padding: 20px 30px;
-      display: flex;
-      align-items: center;
     }
 
-    header img {
-      height: 60px;
+    .header-logo img {
+      max-width: 280px;
+      margin: 0 auto;
+      display: block;
     }
 
     .hero {
       text-align: center;
-      padding: 60px 20px 30px;
+      padding: 40px 20px;
       background: #0f172a;
     }
 
     .hero h1 {
       font-size: 2.5rem;
-      margin-top: 30px;
       margin-bottom: 20px;
       color: #38bdf8;
     }
@@ -179,13 +184,11 @@
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <a href="index.html">
-      <img src="images/FullLogo.png" alt="Rob AI Solutions Logo" />
-    </a>
-  </header>
+
+  <div class="header-logo">
+    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
+  </div>
 
   <div class="hero">
     <h1>AI Concierge for Business Automations</h1>
