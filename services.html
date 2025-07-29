@@ -15,6 +15,28 @@
       background: #0a0f1a;
       color: #e5e7eb;
     }
+    .logo-container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeInHeader 2s ease-in-out;
+    }
+
+    .logo-container img {
+      height: 180px;
+      width: auto;
+    }
+
+    @keyframes fadeInHeader {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
 
     header {
       background: #0f172a;
@@ -121,7 +143,10 @@
 <body>
 
   <header>
-    <img src="images/FullLogo.png" alt="Rob AI Solutions logo">
+    <div class="logo-container">
+    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
+  </div>
+
     <h1>AI Consulting Services</h1>
     <p>Choose the plan that best fits your business needs. All packages are customizable. Get strategic guidance and powerful AI solutions, on demand.</p>
   </header>
