@@ -2,38 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rob AI Concierge | B2B Virtual CTO Services</title>
-  <meta name="description" content="AI Concierge by Rob AI Solutions: Your virtual CTO for business automation, AI tools, and growth strategy." />
-  <meta name="keywords" content="AI Concierge, virtual CTO, automation, Rob AI, business intelligence, AI reporting, Streamlit tools" />
-  <meta name="author" content="Rob Bennett" />
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="AI Concierge by Rob AI Solutions" />
-  <meta property="og:description" content="Your virtual CTO for AI business automation and growth strategy. Explore our AI Concierge services." />
-  <meta property="og:image" content="https://robaisolutions.com/images/FullLogo.png" />
-  <meta property="og:url" content="https://robaisolutions.com/ai-concierge.html" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Rob AI Concierge | Virtual CTO" />
-  <meta name="twitter:description" content="Automate smarter with Rob AI Concierge. Your virtual CTO partner for growth." />
-  <meta name="twitter:image" content="https://robaisolutions.com/images/FullLogo.png" />
-
-  <!-- Favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Concierge | Rob AI Solutions</title>
+  <meta name="description" content="Hire an AI Concierge or Virtual CTO to automate your business workflows. Tailored solutions for startups, professionals, and small businesses." />
   <link rel="icon" href="images/favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FE6YRSP3ZM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-FE6YRSP3ZM');
-  </script>
-
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -41,223 +14,256 @@
       padding: 0;
       background: #0a0f1a;
       color: #e5e7eb;
-      line-height: 1.6;
-    }
-   .logo-container {
-      text-align: center;
-      padding: 20px;
-      animation: fadeInHeader 2s ease-in-out;
     }
 
-    .logo-container img {
-      height: 180px;
-      width: auto;
-    }
-
-    @keyframes fadeInHeader {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .hero {
-      text-align: center;
-      padding: 80px 20px 40px;
+    header {
       background: #0f172a;
+      text-align: center;
+      padding: 60px 20px;
     }
 
-    .hero img {
-      max-width: 300px;
+    header img {
+      max-width: 130px;
       margin-bottom: 20px;
     }
 
-    .hero h1 {
+    header h1 {
       font-size: 2.5rem;
-      margin-bottom: 20px;
       color: #38bdf8;
+      margin-bottom: 10px;
     }
 
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
+    header p {
       color: #94a3b8;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
-    .cta-button {
+    .lead-magnet {
+      background: #1e293b;
+      text-align: center;
+      padding: 40px 20px;
+      margin: 40px 20px;
+      border-radius: 10px;
+    }
+
+    .lead-magnet h2 {
+      color: #38bdf8;
+      font-size: 1.8rem;
+    }
+
+    .lead-magnet p {
+      color: #cbd5e1;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+
+    .lead-magnet a {
+      display: inline-block;
+      margin-top: 15px;
       background: #38bdf8;
       color: #0f172a;
-      border: none;
-      padding: 14px 28px;
-      font-size: 1rem;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .lead-magnet a:hover {
+      background: #0ea5e9;
+    }
+
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      border-radius: 10px;
+      padding: 30px;
+      width: 280px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h2 {
+      color: #38bdf8;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      margin: 10px 0 20px;
+    }
+
+    .card ul {
+      text-align: left;
+      padding: 0;
+      list-style: none;
+    }
+
+    .card ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #334155;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 10px 20px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .cta-button:hover {
+    .card a:hover {
       background: #0ea5e9;
     }
 
-    .section {
-      padding: 60px 20px;
-      max-width: 900px;
-      margin: 0 auto;
+    .faq {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .section h2 {
-      font-size: 2rem;
+    .faq h2 {
       color: #38bdf8;
-      margin-bottom: 20px;
       text-align: center;
+      margin-bottom: 20px;
     }
 
-    .section ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .section li {
+    .faq-item {
       background: #1e293b;
-      margin: 10px 0;
-      padding: 15px;
-      border-radius: 8px;
-    }
-
-    .form-section {
-      background: #1e293b;
-      padding: 30px;
-      border-radius: 10px;
-      margin-top: 40px;
-    }
-
-    .form-section form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-
-    .form-section input, .form-section textarea {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      font-size: 1rem;
-    }
-
-    .form-section button {
-      background: #38bdf8;
-      color: #0f172a;
-      padding: 12px;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .form-section button:hover {
-      background: #0ea5e9;
-    }
-
-    .testimonial {
-      background: #1e293b;
-      border-left: 5px solid #38bdf8;
       padding: 20px;
       border-radius: 8px;
-      margin: 20px 0;
-      font-style: italic;
+      margin-bottom: 15px;
     }
 
-    .footer {
-      text-align: center;
-      padding: 30px;
-      font-size: 0.9rem;
-      background: #0a0f1a;
-      color: #94a3b8;
+    .faq-item h3 {
+      margin: 0 0 10px;
+      color: #e5e7eb;
+      font-size: 1.1rem;
     }
 
-    .back-home {
-      display: block;
+    .faq-item p {
+      margin: 0;
+      color: #cbd5e1;
+    }
+
+    .back-link {
       text-align: center;
       margin-top: 30px;
+    }
+
+    .back-link a {
       color: #38bdf8;
       text-decoration: none;
       font-weight: bold;
     }
-    .back-home:hover {
+
+    .back-link a:hover {
       text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #0a0f1a;
+      color: #94a3b8;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-   <div class="logo-container">
-    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
+
+  <header>
+    <img src="images/FullLogo.png" alt="Rob AI Solutions logo">
+    <h1>AI Concierge Services</h1>
+    <p>Hire a Virtual CTO to automate your business with AI workflows, tools, and strategy built just for you.</p>
+  </header>
+
+  <!-- Lead Magnet Section -->
+  <section class="lead-magnet">
+    <h2>Get a Free AI Automation Audit</h2>
+    <p>Discover where AI can save time, cut costs, and streamline your operations. No tech experience needed.</p>
+    <a href="https://calendly.com/robaisolutions/ai-audit" target="_blank">Book Your Free Audit</a>
+  </section>
+
+  <!-- Pricing Cards -->
+  <section class="services">
+    <div class="card">
+      <h2>Starter</h2>
+      <p class="price">$499/month</p>
+      <ul>
+        <li>2 AI workflows/month</li>
+        <li>1-hour strategy call</li>
+        <li>Email support</li>
+        <li>Access to AI tool library</li>
+      </ul>
+      <a href="https://calendly.com/robaisolutions/ai-concierge-consult" target="_blank">Get Started</a>
+    </div>
+    <div class="card">
+      <h2>Professional</h2>
+      <p class="price">$1,499/month</p>
+      <ul>
+        <li>Up to 6 workflows/month</li>
+        <li>2 calls/month</li>
+        <li>Priority support</li>
+        <li>Custom dashboards & automations</li>
+      </ul>
+      <a href="https://calendly.com/robaisolutions/ai-concierge-consult" target="_blank">Get Started</a>
+    </div>
+    <div class="card">
+      <h2>Enterprise</h2>
+      <p class="price">Custom</p>
+      <ul>
+        <li>Dedicated Virtual CTO</li>
+        <li>Unlimited automations</li>
+        <li>Team training & onboarding</li>
+        <li>End-to-end AI integrations</li>
+      </ul>
+      <a href="mailto:rob@robaisolutions.com">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h3>What’s included in the strategy call?</h3>
+      <p>We review your business, identify automation opportunities, and outline next steps for AI integration.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you work with non-technical businesses?</h3>
+      <p>Absolutely! We specialize in helping small businesses and professionals use AI tools without coding.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does it take to deliver a workflow?</h3>
+      <p>Most automations are delivered within 5–10 business days, depending on complexity.</p>
+    </div>
+  </section>
+
+  <!-- Return Link -->
+  <div class="back-link">
+    <a href="index.html">&larr; Return to Home Page</a>
   </div>
-  <div class="hero">
-    
-   <div class="hero" style="text-align: center;">
-    <h1>AI Concierge for Business Automations</h1>
-    <p>Get an on-demand AI expert and automation strategist for your business. Our AI Concierge acts as your Virtual CTO — guiding implementation, managing integrations, and unlocking efficiency.</p>
-    <a href="https://calendly.com/robaisolutions/ai-concierge-consult" class="cta-button" target="_blank">Book a Free Strategy Call</a>
-    <a href="index.html" class="back-home">&larr; Return to Home Page</a>
-  </div>
 
-
-  <section class="section">
-    <h2>What We Deliver</h2>
-    <ul>
-      <li><strong>Automation Consulting:</strong> Identify, design, and implement AI-powered workflows.</li>
-      <li><strong>Custom AI Tools:</strong> Built-for-you solutions tailored to your business operations.</li>
-      <li><strong>Tech Stack Integration:</strong> Streamline apps like Google Workspace, CRMs, Airtable, Zapier, and more.</li>
-      <li><strong>Reporting Dashboards:</strong> Transform raw data into actionable insights with auto-generated reports.</li>
-      <li><strong>AI Training:</strong> Team training sessions on prompt engineering, AI adoption, and compliance.</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Why Businesses Choose Rob AI Concierge</h2>
-    <ul>
-      <li><strong>20+ Years Experience:</strong> IT, dev, automation, and real-world business operations knowledge.</li>
-      <li><strong>No-Code/Low-Code Focus:</strong> Fast prototyping and affordable delivery.</li>
-      <li><strong>Hands-On Support:</strong> We don't just advise — we build with you.</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Client Testimonials</h2>
-    <div class="testimonial">"Rob AI Solutions saved us hundreds of hours by automating our client reporting. A true game changer." – Laura, Marketing Director</div>
-    <div class="testimonial">"The AI Concierge gave us strategic clarity and tools that actually work. Highly recommended!" – James, Tech Startup Founder</div>
-  </section>
-<section class="lead-magnet" style="background:#1e293b; text-align:center; padding:40px 20px; border-top:1px solid #334155;">
-  <h2 style="color:#38bdf8;">Free AI Automation Audit</h2>
-  <p style="color:#cbd5e1; max-width:600px; margin:10px auto 25px;">
-    Want to know how AI can streamline your business? Get a free audit with personalized recommendations for automating reports, tasks, and client workflows.
-  </p>
-  <form action="https://formspree.io/f/mwkgejed" method="POST" style="max-width:400px; margin:0 auto;">
-    <input type="email" name="email" required placeholder="Enter your email" style="padding:10px; width:100%; border:none; border-radius:6px; margin-bottom:10px;" />
-    <textarea name="message" rows="3" placeholder="Tell us briefly about your business (optional)" style="padding:10px; width:100%; border:none; border-radius:6px;"></textarea>
-    <button type="submit" style="margin-top:10px; padding:10px 20px; background:#38bdf8; color:#0f172a; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">
-      Request Free Audit
-    </button>
-  </form>
-</section>
-
-  <section class="section form-section">
-    <h2>Get in Touch</h2>
-    <form action="https://formspree.io/f/your-form-id" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Tell us what you're looking for..." required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <a href="index.html" class="back-home">&larr; Return to Home Page</a>
-  </section>
-
-  <footer class="footer">
+  <footer>
     &copy; 2025 Rob AI Solutions. Built with ❤️ and Python.
   </footer>
+
 </body>
 </html>
