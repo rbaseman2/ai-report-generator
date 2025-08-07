@@ -15,6 +15,27 @@
       background: #0a0f1a;
       color: #e5e7eb;
     }
+   .logo-container {
+      text-align: center;
+      padding: 20px;
+      animation: fadeInHeader 2s ease-in-out;
+    }
+
+    .logo-container img {
+      height: 180px;
+      width: auto;
+    }
+
+    @keyframes fadeInHeader {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
     header {
       background: #0f172a;
@@ -188,9 +209,12 @@
   </style>
 </head>
 <body>
+   <div class="logo-container">
+    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
+  </div>
 
   <header>
-    <img src="images/FullLogo.png" alt="Rob AI Solutions logo">
+   
     <h1>AI Concierge Services</h1>
     <p>Hire a Virtual CTO to automate your business with AI workflows, tools, and strategy built just for you.</p>
   </header>
