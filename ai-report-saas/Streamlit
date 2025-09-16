@@ -1,0 +1,7 @@
+app.py
+  pages/
+  core/
+  services/
+  .streamlit/config.toml
+  requirements.txt
+  .env.example
