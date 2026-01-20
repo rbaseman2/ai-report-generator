@@ -4,8 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="google-site-verification" content="fyBHepj7-b06c7RP5QJcTEHGyWeiWjTwXZSEaGHKVP8" />
-  <title>Rob AI Solutions | AI Report Generator SaaS</title>
-  <meta name="description" content="Rob AI Solutions builds practical AI tools. Try AI Report SaaS to upload a document and generate a professional business summary in minutes." />
+
+  <!-- SEO Title & Description -->
+  <title>AI Report Generator for Business Documents | Executive Summaries in Minutes</title>
+  <meta name="description"
+        content="Upload PDFs, Word files, or spreadsheets and generate executive-ready business reports with AI. Save hours of manual analysis in minutes." />
 
   <!-- Canonical -->
   <link rel="canonical" href="https://robaisolutions.com/" />
@@ -15,15 +18,17 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Rob AI Solutions | AI Report Generator SaaS" />
-  <meta property="og:description" content="Upload a document and generate a polished business summary in minutes. Built by Rob AI Solutions." />
+  <meta property="og:title" content="AI Report Generator for Business Documents" />
+  <meta property="og:description"
+        content="Upload documents and generate executive-ready summaries, insights, and action items using AI." />
   <meta property="og:url" content="https://robaisolutions.com/" />
   <meta property="og:image" content="https://robaisolutions.com/images/FullLogo.png" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Rob AI Solutions | AI Report Generator SaaS" />
-  <meta name="twitter:description" content="Upload a document and generate a polished business summary in minutes." />
+  <meta name="twitter:title" content="AI Report Generator for Business Documents" />
+  <meta name="twitter:description"
+        content="Generate executive-ready business summaries, insights, and action items from documents using AI." />
   <meta name="twitter:image" content="https://robaisolutions.com/images/FullLogo.png" />
 
   <!-- Fonts -->
@@ -58,27 +63,9 @@
       "url": "https://robaisolutions.com/"
     },
     "offers": [
-      {
-        "@type": "Offer",
-        "price": "9.99",
-        "priceCurrency": "USD",
-        "category": "subscription",
-        "name": "Basic"
-      },
-      {
-        "@type": "Offer",
-        "price": "19.99",
-        "priceCurrency": "USD",
-        "category": "subscription",
-        "name": "Pro"
-      },
-      {
-        "@type": "Offer",
-        "price": "39.99",
-        "priceCurrency": "USD",
-        "category": "subscription",
-        "name": "Enterprise"
-      }
+      { "@type": "Offer", "price": "9.99", "priceCurrency": "USD", "category": "subscription", "name": "Basic" },
+      { "@type": "Offer", "price": "19.99", "priceCurrency": "USD", "category": "subscription", "name": "Pro" },
+      { "@type": "Offer", "price": "39.99", "priceCurrency": "USD", "category": "subscription", "name": "Enterprise" }
     ]
   }
   </script>
@@ -96,7 +83,6 @@
     body {
       font-family: 'Roboto', sans-serif;
       margin: 0;
-      padding: 0;
       background: var(--primary-bg);
       color: var(--text-light);
       line-height: 1.6;
@@ -105,17 +91,10 @@
     .logo-container {
       text-align: center;
       padding: 20px;
-      animation: fadeInHeader 2s ease-in-out;
     }
 
     .logo-container img {
       height: 180px;
-      width: auto;
-    }
-
-    @keyframes fadeInHeader {
-      from { opacity: 0; transform: translateY(-20px); }
-      to   { opacity: 1; transform: translateY(0); }
     }
 
     nav {
@@ -129,13 +108,6 @@
       text-decoration: none;
       color: var(--accent);
       font-weight: bold;
-      font-size: 1rem;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      color: var(--accent-hover);
-      text-decoration: underline;
     }
 
     .container {
@@ -143,167 +115,20 @@
       margin: 40px auto;
       padding: 30px;
       background: #1e293b;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
       border-radius: 12px;
     }
 
-    h1, h2 {
-      color: var(--accent);
-      text-align: center;
-    }
-
-    h1 { font-size: 2rem; margin-bottom: 10px; }
-    h2 { font-size: 1.8rem; margin-bottom: 20px; }
-
-    p {
-      color: #cbd5e1;
-      font-size: 1.1rem;
-    }
+    h1, h2 { color: var(--accent); text-align: center; }
 
     .hero {
       text-align: center;
-      padding: 10px 0 20px;
-    }
-
-    .hero p {
-      max-width: 760px;
-      margin: 0 auto;
-    }
-
-    .project {
-      border: 1px solid #334155;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 30px;
-      background: var(--secondary-bg);
+      padding-bottom: 20px;
     }
 
     .button {
       display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 24px;
       background: var(--accent);
       color: var(--secondary-bg);
       font-weight: bold;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-right: 10px;
-      margin-top: 10px;
-      transition: background 0.3s ease;
-    }
-
-    .button:hover { background: var(--accent-hover); }
-
-    .button.secondary {
-      background: transparent;
-      border: 1px solid var(--accent);
-      color: var(--accent);
-    }
-
-    .button.secondary:hover {
-      border-color: var(--accent-hover);
-      color: var(--accent-hover);
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px;
-      background: var(--primary-bg);
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="logo-container">
-    <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
-  </div>
-
-  <nav role="navigation">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="ai-concierge.html">AI Concierge</a>
-    <a href="contact.html">Contact</a>
-    <a href="thanks.html">Thank You</a>
-  </nav>
-
-  <main class="container">
-    <section class="hero">
-      <h1>Practical AI tools that save time and produce real results</h1>
-      <p>
-        Rob AI Solutions builds simple, high-impact automation and AI apps for busy professionals and small businesses.
-        If you need fast, professional summaries from documents, start with <strong>AI Report SaaS</strong>.
-      </p>
-      <a class="button" href="https://ai-report-saas.onrender.com/" target="_blank" rel="noopener">Try AI Report SaaS</a>
-      <a class="button secondary" href="#contact">Talk to Rob</a>
-    </section>
-
-    <section id="projects">
-      <h2>Featured Projects</h2>
-
-      <div class="project">
-        <h3>AI Report SaaS (Monetized App)</h3>
-        <p>
-          Upload a document and generate a clean, client-ready business summary with key insights.
-          Subscription billing is available inside the app.
-        </p>
-        <a class="button" href="https://ai-report-saas.onrender.com/" target="_blank" rel="noopener">Open the App</a>
-        <a class="button secondary" href="https://ai-report-saas.onrender.com/Billing" target="_blank" rel="noopener">View Plans</a>
-      </div>
-
-      <div class="project">
-        <h3>AI-Powered Report Generator (Legacy Demo)</h3>
-        <p>
-          Earlier version of the report generator built with Python and Streamlit. (Demo / reference only.)
-        </p>
-        <a class="button secondary" href="https://github.com/rbaseman2/ai-report-generator" target="_blank" rel="noopener">GitHub Repo</a>
-      </div>
-
-      <div class="project">
-        <h3>Resume Summarizer (Coming Soon)</h3>
-        <p>A tool that extracts key qualifications from resumes and matches them to job descriptions using NLP and OpenAI.</p>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Interested in working together or need a custom AI solution?</p>
-      <p>Email: admin@robaisolutions.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/robaisolutions" target="_blank" rel="noopener">@robaisolutions</a></p>
-    </section>
-  </main>
-
-  <section class="lead-magnet" style="background:#1e293b; text-align:center; padding: 40px 20px; margin: 40px 0; border-radius: 10px;">
-    <h2 style="color:#38bdf8; font-size:1.8rem;">Get a Free AI Automation Audit</h2>
-    <p style="color:#cbd5e1; max-width:700px; margin: 0 auto 20px;">
-      Discover where AI can save time, cut costs, and streamline your operations. No tech experience needed.
-    </p>
-    <a href="https://calendly.com/robaisolutions/ai-audit" target="_blank" rel="noopener"
-       style="display:inline-block; margin-top:15px; background:#38bdf8; color:#0f172a; padding:12px 24px; border-radius:6px; font-weight:bold; text-decoration:none;">
-      Book Your Free Audit
-    </a>
-  </section>
-
-  <section class="lead-signup" style="background:#1e293b; text-align:center; padding:40px 20px; margin:40px auto; border-radius:10px; max-width:600px;">
-    <h2 style="color:#38bdf8; font-size:1.8rem; margin-bottom:10px;">Receive Our Free AI Automation Guide</h2>
-    <p style="color:#cbd5e1; margin-bottom:20px;">
-      Learn how to streamline your business using AI tools. Sign up to get our “Top 5 AI Automations for Small Businesses” guide delivered instantly via email.
-    </p>
-    <form action="https://formspree.io/f/mzzvedao" method="POST" style="display:grid; gap:10px;">
-      <input type="text" name="name" placeholder="Your Name" required
-             style="padding:10px; border: none; border-radius:5px; width:100%;" />
-      <input type="email" name="email" placeholder="Your Email" required
-             style="padding:10px; border: none; border-radius:5px; width:100%;" />
-      <button type="submit"
-              style="background:#38bdf8; color:#0f172a; border:none; padding:12px; font-weight:bold; border-radius:5px; cursor:pointer;">
-        Send Me the Guide
-      </button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 Rob AI Solutions. Built with ❤️ and Python.</p>
-  </footer>
-</body>
-</html>
+      border-radius:
