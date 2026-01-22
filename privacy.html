@@ -40,6 +40,7 @@ Date: YYYY-MM-DD
     ul { padding-left: 18px; }
   </style>
 </head>
+
 <body>
   <div class="wrap">
     <h1>Privacy Policy</h1>
@@ -116,5 +117,32 @@ Date: YYYY-MM-DD
       Also see our <a href="/terms.html">Terms</a> (if available).
     </p>
   </div>
+<!--
+PHASE 1 LOCKED – GA4 EVENT TRACKING
+Verified working: page_view + CTA events
+Do not modify without deliberate Phase 2/3 change
+-->
+
+<script>
+  function trackGAEvent(eventName, params = {}) {
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, params);
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    const el = e.target.closest('[data-ga-event]');
+    if (!el) return;
+
+    trackGAEvent(el.dataset.gaEvent, {
+      event_category: 'cta',
+      event_label: el.dataset.gaLabel || 'unknown',
+      page_location: window.location.pathname
+    });
+  });
+</script>
+
+
+
 </body>
 </html>

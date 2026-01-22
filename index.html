@@ -206,6 +206,8 @@ Date: YYYY-MM-DD
   </style>
 </head>
 
+
+
 <body>
   <div class="logo-container">
     <img src="images/FullLogo.png" alt="Rob AI Solutions logo" />
@@ -268,5 +270,31 @@ Date: YYYY-MM-DD
   <footer>
     <p>&copy; 2026 Rob AI Solutions</p>
   </footer>
+
+<!--
+PHASE 1 LOCKED – GA4 EVENT TRACKING
+Verified working: page_view + CTA events
+Do not modify without deliberate Phase 2/3 change
+-->
+
+<script>
+  function trackGAEvent(eventName, params = {}) {
+    if (typeof gtag === 'function') {
+      gtag('event', eventName, params);
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    const el = e.target.closest('[data-ga-event]');
+    if (!el) return;
+
+    trackGAEvent(el.dataset.gaEvent, {
+      event_category: 'cta',
+      event_label: el.dataset.gaLabel || 'unknown',
+      page_location: window.location.pathname
+    });
+  });
+</script>
+
 </body>
 </html>
